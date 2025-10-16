@@ -1,0 +1,16 @@
+/* Define uma cor de fundo suave para a página, fazendo os cards brancos se destacarem. */
+body {
+    background-color: #f8f9fa; /* Um cinza bem claro, padrão do Bootstrap. */
+}
+
+/* Efeito de hover opcional para os cards da página de sessões.
+  Isso adiciona um toque de interatividade.
+*/
+#lista-sessoes .card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#lista-sessoes .card:hover {
+    transform: translateY(-5px); /* Eleva o card sutilmente. */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Aumenta a sombra para dar profundidade. */
+}

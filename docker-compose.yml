@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8082:80"
+    volumes:
+      # Mapeia a pasta 'app' local para o diretório público do Nginx no contêiner
+      - ./app:/usr/share/nginx/html
